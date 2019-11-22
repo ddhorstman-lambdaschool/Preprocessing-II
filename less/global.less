@@ -33,6 +33,11 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+li {
+
+    line-height: 1.5;
+  font-size: 1.6rem;
+}
 
 img {
   max-width: 100%;
@@ -43,4 +48,19 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+    @media @phone {
+    width:90%;
+    margin:auto;
+  }
 }
+  .mobile-only {
+    display:none;
+    @media @phone {
+      display:block;
+    }
+  }
+  .desktop-only {
+    @media @phone {
+      display:none;
+    }
+  }
